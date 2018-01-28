@@ -1,6 +1,6 @@
 FROM ubuntu:xenial
 
-RUN apt-get -q -y update && apt-get install -y git rsync wget
+RUN apt-get -q -y update && apt-get install -y git rsync wget build-essential
 
 ENV HUGO_VERSION 0.32.4
 ENV HUGO_BINARY hugo_${HUGO_VERSION}_Linux-64bit.deb
